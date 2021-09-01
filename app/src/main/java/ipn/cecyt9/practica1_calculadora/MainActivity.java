@@ -129,7 +129,10 @@ public class MainActivity extends AppCompatActivity {
         operador = "-";
         onClickButtonCapturaNumero1(miView);
     }
-
+    public void onClickPorcentaje(View miView) {
+        operador = "%";
+        onClickButtonCapturaNumero1(miView);
+    }
     public void onClickIgual(View miView) {
         TextView tv = (TextView) findViewById(R.id.textView);
         numero2 = Double.parseDouble(tv.getText().toString());
@@ -140,6 +143,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (operador.equals("-")) {
                 resultado = numero1 - numero2;
+            }
+            if (operador.equals("%")) {
+                resultado = ((numero1 / 100) * numero2);
             }
             if (operador.equals("*")) {
                 resultado = numero1 * numero2;
