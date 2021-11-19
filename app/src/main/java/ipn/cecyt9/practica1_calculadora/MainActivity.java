@@ -150,6 +150,18 @@ public class MainActivity extends AppCompatActivity {
             if (operador.equals("*")) {
                 resultado = numero1 * numero2;
             }
+            //Agrega tu operacion aqui Andy
+            if (operador.equals("cm a mm")) {
+                resultado = numero1 * 10;
+            }
+            //Agrega tu operacion aqui Osuna
+            if (operador.equals("Km a m")) {
+                resultado = numero1 * 1000;
+            }
+            //Agrega tu operacion aqui Vale
+            if (operador.equals("A. Cuadrado")) {
+                resultado = numero1 * numero1;
+            }
             if (operador.equals("/")) {
                 resultado = numero1 / numero2;
             }
@@ -159,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void onClickExponente(View miView){
-        operador = "exp";
+        operador = "x²";
         TextView tv = (TextView) findViewById(R.id.textView);
         try {
         numero1 = Double.parseDouble(tv.getText().toString());
@@ -175,4 +187,15 @@ public class MainActivity extends AppCompatActivity {
             tv.setText(String.valueOf(resultado));
         }catch (NumberFormatException nfe){}
     }
+    public void onClickC(View miView) {
+            TextView tv = findViewById(R.id.textView);
+            tv.setText("");
+        }
+    //Agrega tu operacion aqui Osuna
+
+    //Agrega tu operacion aqui Andy
+
+    //Agrega tu operacion aqui Vale
+
+    //Aqui ya acabo profe gracias por su atencion
 }
