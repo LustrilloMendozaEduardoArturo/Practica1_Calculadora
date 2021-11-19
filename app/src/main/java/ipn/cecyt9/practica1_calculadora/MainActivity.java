@@ -180,7 +180,19 @@ public class MainActivity extends AppCompatActivity {
             tv.setText("");
         }
     //Agrega tu operacion aqui Osuna
-
+	public void onClickKmam(View miView){
+            operador = "Km am";
+        onClickButtonCapturaNumero1(miView);
+        TextView tv = (TextView) findViewById(R.id.textView);
+        try {
+            if (operador.equals("Km a m")) {
+                resultado = numero1 * 1000;
+            }
+            tv.setText(resultado.toString());
+        } catch (NumberFormatException nfe) {
+            Toast.makeText(this, "Numero Incorrecto", Toast.LENGTH_SHORT).show();
+        }
+    }
     //Agrega tu operacion aqui Andy
 
     //Agrega tu operacion aqui Vale
