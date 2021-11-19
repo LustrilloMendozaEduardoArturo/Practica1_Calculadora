@@ -150,18 +150,6 @@ public class MainActivity extends AppCompatActivity {
             if (operador.equals("*")) {
                 resultado = numero1 * numero2;
             }
-            //Agrega tu operacion aqui Andy
-            if (operador.equals("cm a mm")) {
-                resultado = numero1 * 10;
-            }
-            //Agrega tu operacion aqui Osuna
-            if (operador.equals("Km a m")) {
-                resultado = numero1 * 1000;
-            }
-            //Agrega tu operacion aqui Vale
-            if (operador.equals("A. Cuadrado")) {
-                resultado = numero1 * numero1;
-            }
             if (operador.equals("/")) {
                 resultado = numero1 / numero2;
             }
