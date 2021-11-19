@@ -184,6 +184,18 @@ public class MainActivity extends AppCompatActivity {
     //Agrega tu operacion aqui Andy
 
     //Agrega tu operacion aqui Vale
-
+	public void onClickAC(View miView) {
+            operador = "A. Cuadrado";
+            onClickButtonCapturaNumero1(miView);
+            TextView tv = (TextView) findViewById(R.id.textView);
+            try {
+                if (operador.equals("A. Cuadrado")) {
+                    resultado = numero1 * numero1;
+                }
+                tv.setText(resultado.toString());
+            } catch (NumberFormatException nfe) {
+                Toast.makeText(this, "Numero Incorrecto", Toast.LENGTH_SHORT).show();
+            }
+        }
     //Aqui ya acabo profe gracias por su atencion
 }
