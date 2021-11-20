@@ -196,7 +196,6 @@ public class MainActivity extends AppCompatActivity {
     //Agrega tu operacion aqui Andy
 
     //Agrega tu operacion aqui Vale
-    
 	public void onClickAC(View miView) {
             operador = "A. Cuadrado";
             onClickButtonCapturaNumero1(miView);
