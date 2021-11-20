@@ -179,23 +179,7 @@ public class MainActivity extends AppCompatActivity {
             TextView tv = findViewById(R.id.textView);
             tv.setText("");
         }
-    //Agrega tu operacion aqui Osuna
-	public void onClickKmam(View miView){
-            operador = "Km am";
-        onClickButtonCapturaNumero1(miView);
-        TextView tv = (TextView) findViewById(R.id.textView);
-        try {
-            if (operador.equals("Km a m")) {
-                resultado = numero1 * 1000;
-            }
-            tv.setText(resultado.toString());
-        } catch (NumberFormatException nfe) {
-            Toast.makeText(this, "Numero Incorrecto", Toast.LENGTH_SHORT).show();
-        }
-    }
-    //Agrega tu operacion aqui Andy
-
-    //Agrega tu operacion aqui Vale
+    
 	public void onClickAC(View miView) {
             operador = "A. Cuadrado";
             onClickButtonCapturaNumero1(miView);
@@ -209,5 +193,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Numero Incorrecto", Toast.LENGTH_SHORT).show();
             }
         }
-    //Aqui ya acabo profe gracias por su atencion
+   
 }
