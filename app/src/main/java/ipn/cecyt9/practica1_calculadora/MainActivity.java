@@ -194,7 +194,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     //Agrega tu operacion aqui Andy
-
+	public void onClickcmamm(View miView){
+            operador = "cm a mm";
+        onClickButtonCapturaNumero1(miView);
+        TextView tv = (TextView) findViewById(R.id.textView);
+        try {
+            if (operador.equals("cm a mm")) {
+                resultado = numero1 * 10;
+            }
+            tv.setText(resultado.toString());
+        } catch (NumberFormatException nfe) {
+            Toast.makeText(this, "Numero Incorrecto", Toast.LENGTH_SHORT).show();
+        }
+    }
     //Agrega tu operacion aqui Vale
 	public void onClickAC(View miView) {
             operador = "A. Cuadrado";
