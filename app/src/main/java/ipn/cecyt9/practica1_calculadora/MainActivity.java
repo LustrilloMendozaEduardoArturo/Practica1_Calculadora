@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         }
 	//Agrega tu operacion aqui Osuna
 	public void onClickKmam(View miView){
-            operador = "Km am";
+            operador = "Km a m";
         onClickButtonCapturaNumero1(miView);
         TextView tv = (TextView) findViewById(R.id.textView);
         try {
